@@ -85,7 +85,11 @@ export default function MarzipanoViewer({
         const asset = new Marzipano.StaticAsset(assetElement);
         const source = new Marzipano.SingleAssetSource(asset);
         const geometry = new Marzipano.EquirectGeometry([{ width }]);
-        const viewLimiter = Marzipano.RectilinearView.limit.traditional(1024, (100 * Math.PI) / 180);
+        const viewLimiter = Marzipano.RectilinearView.limit.traditional(
+          2048,
+          (120 * Math.PI) / 180,
+          (120 * Math.PI) / 180
+        );
         const view = new Marzipano.RectilinearView(null, viewLimiter);
         const scene = viewer.createScene({
           source,
