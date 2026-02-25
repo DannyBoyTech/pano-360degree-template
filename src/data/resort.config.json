@@ -1,0 +1,54 @@
+{
+  "brand": {
+    "name": "Demo Resort",
+    "ctaLabel": "Book Now",
+    "ctaUrl": "https://example.com/book"
+  },
+  "startSceneId": "entrance",
+  "scenes": [
+    {
+      "id": "entrance",
+      "title": "Main Entrance",
+      "image": "/panos/entrance_01.jpg",
+      "hotspots": [
+        { "label": "Go to Lobby", "targetSceneId": "lobby", "yaw": 0.3, "pitch": 0 }
+      ]
+    },
+    {
+      "id": "lobby",
+      "title": "Lobby / Reception",
+      "image": "/panos/lobby_01.jpg",
+      "hotspots": [
+        { "label": "Go to Entrance", "targetSceneId": "entrance", "yaw": -0.5, "pitch": 0 },
+        { "label": "Go to Pool", "targetSceneId": "pool", "yaw": 0.5, "pitch": 0 }
+      ]
+    },
+    {
+      "id": "pool",
+      "title": "Pool",
+      "image": "/panos/pool_01.jpg",
+      "hotspots": [
+        { "label": "Go to Lobby", "targetSceneId": "lobby", "yaw": -0.4, "pitch": 0 },
+        { "label": "Go to River Deck", "targetSceneId": "river_deck", "yaw": 0.4, "pitch": 0 }
+      ]
+    },
+    {
+      "id": "river_deck",
+      "title": "River Deck",
+      "image": "/panos/river_deck_01.jpg",
+      "hotspots": [
+        { "label": "Go to Pool", "targetSceneId": "pool", "yaw": -0.5, "pitch": 0 },
+        { "label": "Go to Mountain Viewpoint", "targetSceneId": "mountain_view", "yaw": 0.5, "pitch": 0 }
+      ]
+    },
+    {
+      "id": "mountain_view",
+      "title": "Mountain Viewpoint",
+      "image": "/panos/mountain_view_01.jpg",
+      "hotspots": [
+        { "label": "Go to River Deck", "targetSceneId": "river_deck", "yaw": 0, "pitch": 0 }
+      ]
+    }
+  ],
+  "guidedTour": ["entrance", "lobby", "pool", "river_deck", "mountain_view"]
+}

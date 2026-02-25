@@ -1,0 +1,74 @@
+.viewer-shell {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+}
+
+.viewer-load-error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  padding: 20px;
+  text-align: center;
+  background: #2a2a2a;
+  color: #ccc;
+}
+
+.viewer-load-error p {
+  margin: 0 0 8px;
+}
+
+.viewer-load-error p:last-child {
+  margin-bottom: 0;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.viewer-container,
+.marzipano-container {
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+}
+
+.loading-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #eee;
+  border-top-color: #333;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.hotspot {
+  cursor: pointer;
+  padding: 6px 10px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.hotspot-link:hover,
+.hotspot-nav:hover,
+.hotspot-info:hover {
+  background: rgba(0, 0, 0, 0.8);
+}

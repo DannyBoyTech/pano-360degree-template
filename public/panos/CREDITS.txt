@@ -1,0 +1,10 @@
+﻿Sample 360 panoramas in this folder are from Wikimedia Commons.
+Use only for testing/demo. For production, replace with your own assets or comply with each license (attribution required).
+
+entrance_01.jpg: Entrance hall - Biblioteca Publica de Evora (Waldyrious, CC BY-SA 4.0)
+lobby_01.jpg: Interior - Castle Church Lutherstadt Wittenberg (Juergen Matern, CC BY-SA 4.0)
+pool_01.jpg: Lake - Binsfeldsee (Simon Waldherr, CC BY-SA 4.0)
+river_deck_01.jpg: River - Biebricher Rheinufer Wiesbaden (Ansgar Koreng, CC BY-SA 3.0 DE)
+mountain_view_01.jpg: Mountain - Maunakea summit (NOIRLab/NSF/AURA/J. Pollard, CC BY 4.0)
+
+Licenses: https://creativecommons.org/licenses/by-sa/4.0/ , https://creativecommons.org/licenses/by/4.0/
