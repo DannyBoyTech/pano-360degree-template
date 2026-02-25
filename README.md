@@ -40,7 +40,13 @@ Edit `src/data/resort.config.json`: `brand`, `startSceneId`, `scenes` (id, title
 
 ## Click-to-go (free-walk style)
 
-In each scene, link hotspots appear in the 360 view (labels like "Go to Lobby", "Go to Pool"). Click one to switch to that scene. You can drag to look around, then click another hotspot to move. Hotspot positions are set per hotspot with optional `yaw` and `pitch` in radians; if omitted, they are spread around the horizon.
+In each scene, link hotspots appear in the 360 view (e.g. "Go to Lobby", "Go to Pool"). When you click one:
+
+1. **Turn toward the sign** – The view smoothly rotates toward that hotspot (you can interrupt by dragging to look around).
+2. **Move to the next place** – The scene fades to the next panorama over about 1 second.
+3. **Look around anytime** – During the turn and during the fade you can drag to look around; the transition continues in the background.
+
+Scenes are cached so returning to a previous room is instant. Hotspot positions use optional `yaw` and `pitch` in radians in config; if omitted, they are spread around the horizon.
 3. Guided auto-go: autorotate 4–8s then advance; pause/resume.
 4. Deploy to GitHub Pages, Netlify, or Vercel.
 

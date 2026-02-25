@@ -1,8 +1,13 @@
 .viewer-shell {
   position: relative;
+  flex: 1;
+  min-height: 0;
   width: 100%;
-  height: 100%;
-  min-height: 400px;
+}
+
+.viewer-shell .viewer-container {
+  position: absolute;
+  inset: 0;
 }
 
 .viewer-load-error {
@@ -29,9 +34,10 @@
 
 .viewer-container,
 .marzipano-container {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
-  min-height: 400px;
 }
 
 .loading-overlay {
@@ -71,4 +77,22 @@
 .hotspot-nav:hover,
 .hotspot-info:hover {
   background: rgba(0, 0, 0, 0.8);
+}
+
+.video-play-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.video-play-overlay span {
+  padding: 10px 16px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  border-radius: 6px;
+  font-size: 14px;
 }

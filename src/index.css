@@ -10,128 +10,27 @@ body {
 }
 
 .app {
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
-.app-header {
-  padding: 12px 20px;
-  background: #0d0d0d;
-  border-bottom: 1px solid #333;
-}
-
-.header-brand {
-  font-size: 1.25rem;
-  font-weight: 600;
-}
-
-.toolbar {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  align-items: center;
-  padding: 10px 20px;
-  background: #252525;
-  border-bottom: 1px solid #333;
-}
-
-.toolbar-btn {
-  padding: 8px 16px;
-  background: #333;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 0.9rem;
-}
-
-.toolbar-btn:hover {
-  background: #444;
-}
-
-.app-body {
+.app-viewer {
   flex: 1;
-  display: flex;
   min-height: 0;
-}
-
-.main-viewer {
-  flex: 1;
   min-width: 0;
-  min-height: 400px;
-}
-
-.info-panel {
-  width: 320px;
-  min-width: 280px;
-  padding: 16px;
-  background: #252525;
-  border-left: 1px solid #333;
   display: flex;
   flex-direction: column;
-  gap: 12px;
 }
 
-.info-panel-title {
-  margin: 0;
-  font-size: 1.1rem;
-}
-
-.cta-button {
-  display: inline-block;
-  padding: 12px 24px;
-  background: #0a7c42;
-  color: #fff;
-  text-decoration: none;
-  border: none;
-  border-radius: 6px;
-  font-size: 1rem;
-  cursor: pointer;
-  text-align: center;
-}
-
-.cta-button:hover {
-  background: #096b38;
-}
-
-.guided-tour-controls {
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-}
-
-.guided-tour-controls button {
-  padding: 8px 14px;
-  background: #333;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 0.9rem;
-}
-
-.guided-tour-controls button:hover {
-  background: #444;
-}
-
-.placeholder-view {
-  width: 100%;
-  height: 100%;
-  min-height: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #2a2a2a;
-  color: #888;
-}
-
-.scene-title-bottom {
-  padding: 10px 20px;
+.status-bar {
+  flex-shrink: 0;
+  padding: 8px 16px;
   background: #252525;
   border-top: 1px solid #333;
-  font-size: 0.95rem;
-  text-align: center;
+  font-size: 0.9rem;
+  color: #ccc;
 }
 
 .config-errors {
@@ -148,14 +47,3 @@ body {
   overflow: auto;
 }
 
-@media (max-width: 768px) {
-  .app-body {
-    flex-direction: column;
-  }
-
-  .info-panel {
-    width: 100%;
-    border-left: none;
-    border-top: 1px solid #333;
-  }
-}

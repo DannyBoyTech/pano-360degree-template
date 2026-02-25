@@ -46,9 +46,18 @@
       "title": "Mountain Viewpoint",
       "image": "/panos/mountain_view_01.jpg",
       "hotspots": [
-        { "label": "Go to River Deck", "targetSceneId": "river_deck", "yaw": 0, "pitch": 0 }
+        { "label": "Go to River Deck", "targetSceneId": "river_deck", "yaw": 0, "pitch": 0 },
+        { "label": "360° Video", "targetSceneId": "old_ghost_road", "yaw": 0.2, "pitch": 0 }
+      ]
+    },
+    {
+      "id": "old_ghost_road",
+      "title": "The Old Ghost Road (360° Video)",
+      "video": "/videos/3-mins-in-360_on_The_Old_Ghost_Road.webm.720p.vp9.webm",
+      "hotspots": [
+        { "label": "Back to Mountain View", "targetSceneId": "mountain_view", "yaw": 0, "pitch": 0 }
       ]
     }
   ],
-  "guidedTour": ["entrance", "lobby", "pool", "river_deck", "mountain_view"]
+  "guidedTour": ["entrance", "lobby", "pool", "river_deck", "mountain_view", "old_ghost_road"]
 }
